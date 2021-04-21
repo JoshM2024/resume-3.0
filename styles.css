@@ -3,6 +3,26 @@ body {
   margin: 0;
 
 }
+section {
+  margin: 0;
+}
+button {
+  margin-left: 45%;
+}
+h5 {
+  color: #F53D59;
+  font-family: "Montserrat";
+  font-style: italic;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: "Roboto Mono";
+}
+h1 {
+ font-family: "Montserrat";
+ font-weight: lighter;
+}
 /******** Class Selectors ********/
 .row {
   width: 100%;
@@ -30,37 +50,42 @@ body {
   height: 300px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  border-radius: 10px;
 }
 .flip-card-front {
   background-color: #bbb;
   color: black;
 }
 .flip-card-back {
-  background-color: dodgerblue;
+  background-color: #F53D59;
   color: white;
   transform: rotateY(180deg);
 }
-.background-img-1, .background-img-2, .background-img-3 {
+.background-img-1, .background-img-2, .background-img-3, .background-img-4 {
   position: relative;
   opacity: 1;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
+  margin-left: 11px;
+  height: 600px;
 }
 .background-img-1 {
   background-image: url("images/nature.jpg");
-  height: 600px;
 }
-
 .background-img-2 {
   background-image: url("images/coding.jpg");
-  height: 600px;
 }
 .background-img-3 {
   background-image: url("images/snowboard.jpg");
-  height: 600px;
+}
+.background-img-4 {
+  background-image: url("images/red.png");
+  height: 300px;
+  width: 100%;
+  border-radius: 15px;
+  padding: 0;
 }
 .caption {
   position: absolute;
@@ -78,10 +103,9 @@ body {
   letter-spacing: 10px;
 }
 .body-section {
-  margin-top: 200px;
-
+  margin-top: 25px;
 }
-#parall-3 {
+#sports {
   background-color: black;
 }
 .skills-text {
@@ -89,6 +113,19 @@ body {
   text-align: center;
   font-size: 15px;
   font-family: "Montserrat";
+}
+.flip-card {
+  margin: 10px;
+}
+.typewriter {
+  height: 100px;
+}
+#skills-btn {
+  font-family: "Roboto Mono";
+}
+.col-lg-9 {
+  height: 325px;
+  margin-top: 30px;
 }
 /******** Animations *********/
 
@@ -110,7 +147,33 @@ body {
 #hiking {
   animation-name: hiking;
 }
-#hiking, #coding {
+@keyframes sports {
+  0% {color: #8DA1A5;}
+  33% {color: #fff;}
+  66% {color: #25DA6B;}
+  100% {color: #8DA1A5;}
+}
+#sports {
+  animation-name: sports;
+}
+#hiking, #coding, #sports {
   animation-duration: 3s;
   animation-iteration-count: infinite;
+}
+@-webkit-keyframes spread-f {
+  from {letter-spacing: 0; color: black;}
+  to {letter-spacing: 3px; color: #F53D59;}
+}
+@-webkit-keyframes spread-b {
+  from {letter-spacing: 3px; color: #F53D59;}
+  to {letter-spacing: 0; color: black;}
+}
+
+.spread-txt {
+    -webkit-animation: spread-b 0.5s;
+}
+
+.spread-txt:hover {
+    -webkit-animation: spread-f 0.5s;
+    animation-fill-mode: forwards;
 }

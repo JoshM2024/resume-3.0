@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="styles.css">
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Montserrat:wght@200;400&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Montserrat:wght@200;400&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
 </head <body>
 <section class="top-section">
   <div class="row">
@@ -19,11 +19,11 @@
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="images/washington.jpg" alt="Me" style="width:300px;height:300px;">
+            <img src="images/washington.jpg" alt="Me" style="width:300px;height:300px; border-radius: 10px;">
           </div>
           <div class="flip-card-back">
             <h1 class="test">Josh Myers</h1>
-            <p>Young Web Designer</p>
+            <p>Junior Web Designer</p>
             <p>(That's Me)</p>
           </div>
         </div>
@@ -31,10 +31,10 @@
     </div>
     <div class="col-lg-9">
       <h1>Josh Myers</h1>
-      <h3>A Little About Me</h3>
-      <p>I consider myself to be a pretty smart kid, and I'm willing to learn new things. I will tenaciously work towards
-        my goals until I reach them, and set new goals after the fact. I always strive to reach new heights all while working in a friendly,
-        constructive ennvironment.</p>
+      <h5><i class="fas fa-angle-double-left"></i> Proffesional Summary <i class="fas fa-angle-double-right"></i></h5>
+      <p>Experienced in multiple programming languages along with skills outside technology. Very flexible and capable to contribute in groups.
+        Although I'm compatible in groups, I excel working alone as well. I'm willing to learn new things and work in teams along the way.
+        I'm action-oriented and have strong and tenacious work ethic.</p>
     </div>
   </div>
 </section>
@@ -65,16 +65,82 @@
     </div>
     <div class="background-img-3">
       <div class="caption">
-        <span class="border" id="parall-3">SPORTS<i class="fas fa-skiing"></i></span>
+        <span class="border" id="sports">SPORTS<i class="fas fa-skiing"></i></span>
       </div>
     </div>
     <div>
-      <p class="skills-text">Sports bleabalkadf I need to put something here but I'm running out of time ig</p>
+      <p class="skills-text">Sports not only put me at a physical advantage, but a mental advantage. Sports train me that giving up isn't an option. Whether it's the first quarter
+       or the last, I have to keep going. In the workfield, I will not stop because something is in my way. The physical aspect gives me an advantage if I need to do any sort of lifting.
+     It will allow me to move things easier and potentially more efficient.</p>
+    </div>
+    <br>
+    <div class="typewriter">
+      <button onclick="typeWriter()" type="button" class="btn btn-danger">Generate Skills list</button>
+      <p id="skills-btn"></p>
+
+      <script>
+        var i = 0;
+        var txt = 'Javascript: ☆☆☆ || HTML: ☆☆☆☆☆ || CSS: ☆☆☆☆☆';
+        var speed = 60;
+
+        function typeWriter() {
+          if (i < txt.length) {
+            document.getElementById("skills-btn").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }
+        }
+      </script>
     </div>
   </div>
 </section>
 <section class="bottom-section">
-
+  <div class="row">
+    <div class="col-lg-6">
+      <h3>Work Experience</h3>
+      <ul>
+        <li class="spread-txt">Mowing</li>
+        <li class="spread-txt">Mulching & Landscaping</li>
+        <li class="spread-txt">Painting & House Renovation</li>
+      </ul>
+    </div>
+    <div class="col-lg-6">
+      <h3>Education</h3>
+      <ul>
+        <li class="spread-txt">Graduated 8th grade</li>
+        <li class="spread-txt">Bachelor's Degree in making people read useless things</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="extra">
+  <h3>Extracurricular Activities</h3>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="background-img-4">
+        <div class="caption">
+          <span class="border">SERVING</span>
+        </div>
+      </div>
+      <p>Blablablablbalbalbla</p>
+    </div>
+    <div class="col-lg-4">
+      <div class="background-img-4">
+        <div class="caption">
+          <span class="border">PLAYING</span>
+        </div>
+      </div>
+      <p>Blablablablbalbalbla</p>
+    </div>
+    <div class="col-lg-4">
+      <div class="background-img-4">
+        <div class="caption">
+          <span class="border">COOKING</span>
+        </div>
+      </div>
+      <p>Blablablablbalbalbla</p>
+    </div>
+  </div>
 </section>
 </body>
 
