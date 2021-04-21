@@ -1,38 +1,45 @@
 /******** Tag Selectors ********/
 body {
   margin: 0;
-
 }
+
 section {
   margin: 0;
 }
+
 button {
   margin-left: 45%;
 }
+
 h5 {
   color: #F53D59;
   font-family: "Montserrat";
   font-style: italic;
 }
+
 h2 {
   text-align: center;
   margin-bottom: 15px;
   font-family: "Roboto Mono";
 }
+
 h1 {
- font-family: "Montserrat";
- font-weight: lighter;
+  font-family: "Montserrat";
+  font-weight: lighter;
 }
+
 /******** Class Selectors ********/
 .row {
   width: 100%;
 }
+
 .flip-card {
   background-color: transparent;
   width: 300px;
   height: 200px;
   perspective: 1000px;
 }
+
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -41,9 +48,11 @@ h1 {
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
+
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
+
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 300px;
@@ -52,15 +61,18 @@ h1 {
   backface-visibility: hidden;
   border-radius: 10px;
 }
+
 .flip-card-front {
   background-color: #bbb;
   color: black;
 }
+
 .flip-card-back {
   background-color: #F53D59;
   color: white;
   transform: rotateY(180deg);
 }
+
 .background-img-1, .background-img-2, .background-img-3, .background-img-4 {
   position: relative;
   opacity: 1;
@@ -71,15 +83,19 @@ h1 {
   margin-left: 11px;
   height: 600px;
 }
+
 .background-img-1 {
   background-image: url("images/nature.jpg");
 }
+
 .background-img-2 {
   background-image: url("images/coding.jpg");
 }
+
 .background-img-3 {
   background-image: url("images/snowboard.jpg");
 }
+
 .background-img-4 {
   background-image: url("images/red.png");
   height: 300px;
@@ -87,6 +103,7 @@ h1 {
   border-radius: 15px;
   padding: 0;
 }
+
 .caption {
   position: absolute;
   left: 0;
@@ -102,78 +119,105 @@ h1 {
   font-family: "Antonio";
   letter-spacing: 10px;
 }
+
 .body-section {
   margin-top: 25px;
 }
+
 #sports {
   background-color: black;
 }
+
 .skills-text {
   margin: 20px 15px;
   text-align: center;
   font-size: 15px;
   font-family: "Montserrat";
 }
+
 .flip-card {
   margin: 10px;
 }
-.typewriter {
-  height: 100px;
-}
-#skills-btn {
+
+
+#skills-btn, #skills-btn2, #skills-btn3 {
   font-family: "Roboto Mono";
 }
+
 .col-lg-9 {
   height: 325px;
   margin-top: 30px;
 }
-/******** Animations *********/
 
+.extra-text {
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 15px;
+  margin: 10px;
+}
+.typewriter-container {
+  width: 300px;
+  height: 200px;
+  background-color: #F53D59;
+  color: #fff;
+  margin: auto;
+  padding: 50px 20px;
+  border-radius: 15px;
+}
+/******** Animations *********/
 @keyframes coding {
   0% {color: #0EBFF1;}
   33% {color: #fff;}
   66% {color: #0EF1B2;}
   100% {color: #0EBFF1;}
 }
+
 #coding {
   animation-name: coding;
 }
+
 @keyframes hiking {
   0% {color: #22DD56;}
   33% {color: #fff;}
   66% {color: #DD9822;}
   100% {color: #22DD56;}
 }
+
 #hiking {
   animation-name: hiking;
 }
+
 @keyframes sports {
   0% {color: #8DA1A5;}
   33% {color: #fff;}
   66% {color: #25DA6B;}
   100% {color: #8DA1A5;}
 }
+
 #sports {
   animation-name: sports;
 }
+
 #hiking, #coding, #sports {
   animation-duration: 3s;
   animation-iteration-count: infinite;
 }
+
 @-webkit-keyframes spread-f {
   from {letter-spacing: 0; color: black;}
   to {letter-spacing: 3px; color: #F53D59;}
 }
+
 @-webkit-keyframes spread-b {
   from {letter-spacing: 3px; color: #F53D59;}
   to {letter-spacing: 0; color: black;}
 }
 
 .spread-txt {
-    -webkit-animation: spread-b 0.5s;
+  -webkit-animation: spread-b 0.5s;
 }
 
 .spread-txt:hover {
-    -webkit-animation: spread-f 0.5s;
-    animation-fill-mode: forwards;
+  -webkit-animation: spread-f 0.5s;
+  animation-fill-mode: forwards;
 }
