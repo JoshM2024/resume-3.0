@@ -1,6 +1,7 @@
 /******** Tag Selectors ********/
 body {
   margin: 0;
+  padding: 0;
 }
 
 section {
@@ -28,7 +29,11 @@ h1 {
   font-weight: lighter;
 }
 
-/******** Class Selectors ********/
+ul {
+  font-family: "Montserrat";
+}
+
+/******** Class/ID Selectors ********/
 .row {
   width: 100%;
 }
@@ -71,6 +76,8 @@ h1 {
   background-color: #F53D59;
   color: white;
   transform: rotateY(180deg);
+  padding: 10px 5px;
+  font-family: "Roboto Mono"
 }
 
 .background-img-1, .background-img-2, .background-img-3, .background-img-4 {
@@ -139,7 +146,6 @@ h1 {
   margin: 10px;
 }
 
-
 #skills-btn, #skills-btn2, #skills-btn3 {
   font-family: "Roboto Mono";
 }
@@ -155,6 +161,7 @@ h1 {
   font-size: 15px;
   margin: 10px;
 }
+
 .typewriter-container {
   width: 300px;
   height: 200px;
@@ -164,7 +171,53 @@ h1 {
   padding: 50px 20px;
   border-radius: 15px;
 }
+
+.extra, .bottom-section, .footer {
+  margin-top: 30px;
+}
+
+.extra-heading {
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: bolder;
+}
+
+.btn {
+  background-color: #F53D59;
+  color: #fff;
+}
+
+.top-text {
+  font-family: "Montserrat";
+}
+
+.footer-text {
+  font-family: "Antonio";
+  font-size: 20px;
+  background-color: #F53D59;
+  color: #fff;
+  text-align: center;
+  height: 200px;
+  padding-top: 80px;
+}
+
+.col-lg-11 {
+  background-color: #F53D59;
+}
+
+.col-lg-1 {
+  background-color: #F3B1B6;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-icon {
+  padding-top: 30%;
+  font-size: 20px;
+}
+
 /******** Animations *********/
+
 @keyframes coding {
   0% {color: #0EBFF1;}
   33% {color: #fff;}
