@@ -8,10 +8,6 @@ section {
   margin: 0;
 }
 
-button {
-  margin-left: 45%;
-}
-
 h5 {
   color: #F53D59;
   font-family: "Montserrat";
@@ -36,6 +32,14 @@ ul {
 /******** Class/ID Selectors ********/
 .row {
   width: 100%;
+}
+
+.george {
+height: 300px;
+width: 300px;
+visibility: hidden;
+position: absolute;
+border-radius: 15px;
 }
 
 .flip-card {
@@ -182,7 +186,7 @@ ul {
   font-weight: bolder;
 }
 
-.btn {
+#button {
   background-color: #F53D59;
   color: #fff;
 }
@@ -273,4 +277,28 @@ ul {
 .spread-txt:hover {
   -webkit-animation: spread-f 0.5s;
   animation-fill-mode: forwards;
+}
+
+
+/******** Media *******/
+
+@media only screen and (max-width : 768px) {
+  .flip-card-front, .flip-card-back, .flip-card-inner, .flip-card, .flip-card:hover {
+    position: absolute;
+    visibility: hidden;
+  }
+  .george {
+    visibility: visible;
+    position: relative;
+    margin-top: 30px;
+  }
+  h1 {
+    margin-left: 10px;
+  }
+  h5 {
+    margin-left: 10px;
+  }
+  .top-text {
+    text-align: center;
+  }
 }

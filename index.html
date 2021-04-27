@@ -13,180 +13,186 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Montserrat:wght@200;400&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<section class="top-section">
-  <div class="row">
-    <div class="col-lg-3">
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src="images/washington.jpg" alt="Me" style="width:300px;height:300px; border-radius: 10px;">
+  <section class="top-section">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="text-center">
+          <img class="george" src="images/washington.jpg" alt="Me">
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/washington.jpg" alt="Me" style="width:300px;height:300px; border-radius: 10px;">
+            </div>
+            <div class="flip-card-back">
+              <h3>Junior Web Developer</h3>
+              <p>I don't know what else to put here...</p>
+            </div>
           </div>
-          <div class="flip-card-back">
-            <h3>Junior Web Developer</h3>
-            <p>I don't know what else to put here...</p>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <h1>Josh Myers</h1>
+        <h5><i class="fas fa-angle-double-left"></i> Proffesional Summary <i class="fas fa-angle-double-right"></i></h5>
+        <p class="top-text">Experienced in multiple programming languages along with skills outside technology. Very flexible and capable to contribute in groups.
+          Although I'm compatible in groups, I excel working alone as well. I'm willing to learn new things and work in teams along the way.
+          I'm action-oriented and have strong and tenacious work ethic.</p>
+      </div>
+    </div>
+  </section>
+  <section class="body-section">
+    <div class="row">
+      <h2>Skills & Hobbies</h2>
+      <div class="background-img-1">
+        <div class="caption">
+          <span class="border" id="hiking">HIKING<i class="fas fa-tree"></i></span>
+        </div>
+      </div>
+      <div>
+        <p class="skills-text">One of my hobbies is hiking. My family and I have gone to many states around the country on hiking trips. Hiking is great because it allows me to take
+          a breath and relax. It also is great because it shows me that precision is needed in everything. On some of the trips my family and I go on, we'll have to
+          climb rocks and little hills. When you are manuevering around these rocks and are next to a cliff, you need precision. With my experience in this hobby, I can
+          bring precision to the workplace.</p>
+      </div>
+      <div class="background-img-2">
+        <div class="caption">
+          <span class="border" id="coding">CODING<i class="fas fa-file-code"></i></span>
+        </div>
+      </div>
+      <div>
+        <p class="skills-text">Coding is great. Especially with our world, knowing how to code at least a little bit is essential for work. Coding not only gives you knowledge about coding,
+          but is give you insight on how to solve problems. Fun fact, this website you're looking at I entirely coded myself. From experience, coding can be quite troublesome.
+          Errors can pop up that anger you and make you want to quit. That actually helps me in the workplace because I can break down problems that arise, find the
+          root of the problem, and how I should go about fixing it.</p>
+      </div>
+      <div class="background-img-3">
+        <div class="caption">
+          <span class="border" id="sports">SPORTS<i class="fas fa-skiing"></i></span>
+        </div>
+      </div>
+      <div>
+        <p class="skills-text">Sports not only put me at a physical advantage, but a mental advantage. Sports train me that giving up isn't an option. Whether it's the first quarter
+          or the last, I have to keep going. In the workfield, I will not stop because something is in my way. The physical aspect gives me an advantage if I need to do any sort of lifting.
+          It will allow me to move things easier and potentially more efficient.</p>
+      </div>
+      <br>
+      <div class="typewriter">
+        <div class="text-center">
+          <button onclick="typeWriter()" type="button" id="button" class="btn btn-danger">Generate Skills list</button>
+        </div>
+        <p style="color: #fff; text-align: center;">I see you're highlighting random parts of my page...</p>
+        <div class="typewriter-container">
+          <p id="skills-btn"></p>
+          <p id="skills-btn2"></p>
+          <p id="skills-btn3"></p>
+        </div>
+
+        <script>
+          var i = 0;
+          var j = 0;
+          var k = 0;
+          var txt = "Javascript: ☆☆☆";
+          var txt2 = "HTML: ☆☆☆☆☆";
+          var txt3 = "CSS: ☆☆☆☆☆";
+          var speed = 50;
+
+          function typeWriter() {
+            if (i < txt.length) {
+              document.getElementById("skills-btn").innerHTML += txt.charAt(i);
+              document.getElementById("button").style.visibility = "hidden";
+              i++;
+              setTimeout(typeWriter, speed);
+            } else if (i === txt.length) {
+              typeWriter2();
+            }
+          }
+
+          function typeWriter2() {
+            if (j < txt2.length) {
+              document.getElementById("skills-btn2").innerHTML += txt2.charAt(j);
+              j++;
+              setTimeout(typeWriter2, speed);
+            } else if (j === txt2.length) {
+              typeWriter3();
+            }
+          }
+
+          function typeWriter3() {
+            if (k < txt3.length) {
+              document.getElementById("skills-btn3").innerHTML += txt3.charAt(k);
+              k++;
+              setTimeout(typeWriter3, speed);
+            }
+          }
+        </script>
+      </div>
+    </div>
+  </section>
+  <section class="bottom-section">
+    <div class="row">
+      <div class="col-lg-6">
+        <h3 class="extra-heading">Work Experience</h3>
+        <ul>
+          <li class="spread-txt">Mowing</li>
+          <li class="spread-txt">Mulching & Landscaping</li>
+          <li class="spread-txt">Painting & House Renovation</li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <h3 class="extra-heading">Education</h3>
+        <ul>
+          <li class="spread-txt">Graduated 8th grade</li>
+          <li class="spread-txt">Bachelor's Degree in making people read useless things</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="extra">
+    <h3 class="extra-heading">Extracurricular Activities</h3>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="background-img-4">
+          <div class="caption">
+            <span class="border">SERVING</span>
           </div>
         </div>
+        <p class="extra-text">On multiple occasions, I have gone and served at locations to help people in need.
+          These experiences are truly fun and allow me to reflect on myself.</p>
       </div>
-    </div>
-    <div class="col-lg-9">
-      <h1>Josh Myers</h1>
-      <h5><i class="fas fa-angle-double-left"></i> Proffesional Summary <i class="fas fa-angle-double-right"></i></h5>
-      <p class="top-text">Experienced in multiple programming languages along with skills outside technology. Very flexible and capable to contribute in groups.
-        Although I'm compatible in groups, I excel working alone as well. I'm willing to learn new things and work in teams along the way.
-        I'm action-oriented and have strong and tenacious work ethic.</p>
-    </div>
-  </div>
-</section>
-<section class="body-section">
-  <div class="row">
-    <h2>Skills & Hobbies</h2>
-    <div class="background-img-1">
-      <div class="caption">
-        <span class="border" id="hiking">HIKING<i class="fas fa-tree"></i></span>
-      </div>
-    </div>
-    <div>
-      <p class="skills-text">One of my hobbies is hiking. My family and I have gone to many states around the country on hiking trips. Hiking is great because it allows me to take
-        a breath and relax. It also is great because it shows me that precision is needed in everything. On some of the trips my family and I go on, we'll have to
-        climb rocks and little hills. When you are manuevering around these rocks and are next to a cliff, you need precision. With my experience in this hobby, I can
-        bring precision to the workplace.</p>
-    </div>
-    <div class="background-img-2">
-      <div class="caption">
-        <span class="border" id="coding">CODING<i class="fas fa-file-code"></i></span>
-      </div>
-    </div>
-    <div>
-      <p class="skills-text">Coding is great. Especially with our world, knowing how to code at least a little bit is essential for work. Coding not only gives you knowledge about coding,
-        but is give you insight on how to solve problems. Fun fact, this website you're looking at I entirely coded myself. From experience, coding can be quite troublesome.
-        Errors can pop up that anger you and make you want to quit. That actually helps me in the workplace because I can break down problems that arise, find the
-        root of the problem, and how I should go about fixing it.</p>
-    </div>
-    <div class="background-img-3">
-      <div class="caption">
-        <span class="border" id="sports">SPORTS<i class="fas fa-skiing"></i></span>
-      </div>
-    </div>
-    <div>
-      <p class="skills-text">Sports not only put me at a physical advantage, but a mental advantage. Sports train me that giving up isn't an option. Whether it's the first quarter
-        or the last, I have to keep going. In the workfield, I will not stop because something is in my way. The physical aspect gives me an advantage if I need to do any sort of lifting.
-        It will allow me to move things easier and potentially more efficient.</p>
-    </div>
-    <br>
-    <div class="typewriter">
-      <button onclick="typeWriter()" type="button" id="button" class="btn btn-danger">Generate Skills list</button>
-      <p style="color: #fff; text-align: center;">I see you're highlighting random parts of my page...</p>
-      <div class="typewriter-container">
-        <p id="skills-btn"></p>
-        <p id="skills-btn2"></p>
-        <p id="skills-btn3"></p>
-      </div>
-
-      <script>
-        var i = 0;
-        var j = 0;
-        var k = 0;
-        var txt = "Javascript: ☆☆☆";
-        var txt2 = "HTML: ☆☆☆☆☆";
-        var txt3 = "CSS: ☆☆☆☆☆";
-        var speed = 50;
-
-        function typeWriter() {
-          if (i < txt.length) {
-            document.getElementById("skills-btn").innerHTML += txt.charAt(i);
-            document.getElementById("button").style.visibility = "hidden";
-            i++;
-            setTimeout(typeWriter, speed);
-          } else if (i === txt.length) {
-            typeWriter2();
-          }
-        }
-
-        function typeWriter2() {
-          if (j < txt2.length) {
-            document.getElementById("skills-btn2").innerHTML += txt2.charAt(j);
-            j++;
-            setTimeout(typeWriter2, speed);
-          } else if (j === txt2.length) {
-            typeWriter3();
-          }
-        }
-
-        function typeWriter3() {
-          if (k < txt3.length) {
-            document.getElementById("skills-btn3").innerHTML += txt3.charAt(k);
-            k++;
-            setTimeout(typeWriter3, speed);
-          }
-        }
-      </script>
-    </div>
-  </div>
-</section>
-<section class="bottom-section">
-  <div class="row">
-    <div class="col-lg-6">
-      <h3 class="extra-heading">Work Experience</h3>
-      <ul>
-        <li class="spread-txt">Mowing</li>
-        <li class="spread-txt">Mulching & Landscaping</li>
-        <li class="spread-txt">Painting & House Renovation</li>
-      </ul>
-    </div>
-    <div class="col-lg-6">
-      <h3 class="extra-heading">Education</h3>
-      <ul>
-        <li class="spread-txt">Graduated 8th grade</li>
-        <li class="spread-txt">Bachelor's Degree in making people read useless things</li>
-      </ul>
-    </div>
-  </div>
-</section>
-<section class="extra">
-  <h3 class="extra-heading">Extracurricular Activities</h3>
-  <div class="row">
-    <div class="col-lg-4">
-      <div class="background-img-4">
-        <div class="caption">
-          <span class="border">SERVING</span>
+      <div class="col-lg-4">
+        <div class="background-img-4">
+          <div class="caption">
+            <span class="border">PLAYING</span>
+          </div>
         </div>
+        <p class="extra-text">Playing things is fun. Whether it's video games with my friends or sports, I really enjoy
+          the competitive aspect of games. Playing games allow me to connect with others socially, which is why I like them.</p>
       </div>
-      <p class="extra-text">On multiple occasions, I have gone and served at locations to help people in need.
-        These experiences are truly fun and allow me to reflect on myself.</p>
-    </div>
-    <div class="col-lg-4">
-      <div class="background-img-4">
-        <div class="caption">
-          <span class="border">PLAYING</span>
+      <div class="col-lg-4">
+        <div class="background-img-4">
+          <div class="caption">
+            <span class="border">COOKING</span>
+          </div>
         </div>
+        <p class="extra-text">Food is good. No denying that. I like cooking because I can experiment and make good things.
+          Cooking helps me to be creative and think outside the box which is why I like it.</p>
       </div>
-      <p class="extra-text">Playing things is fun. Whether it's video games with my friends or sports, I really enjoy
-        the competitive aspect of games. Playing games allow me to connect with others socially, which is why I like them.</p>
     </div>
-    <div class="col-lg-4">
-      <div class="background-img-4">
-        <div class="caption">
-          <span class="border">COOKING</span>
-        </div>
+  </section>
+  <section class="footer">
+    <div class="row">
+      <div class="col-lg-11">
+        <p class="footer-text">This is a footer where I'm supposed to say stuff. Woo. Check out my social media links that don't actually link to anything.</p>
       </div>
-      <p class="extra-text">Food is good. No denying that. I like cooking because I can experiment and make good things.
-        Cooking helps me to be creative and think outside the box which is why I like it.</p>
+      <div class="col-lg-1">
+        <p class="footer-icon"><i class="fab fa-instagram"></i></p>
+        <p class="footer-icon"><i class="fab fa-snapchat-ghost"></i></p>
+        <p class="footer-icon"><i class="fab fa-twitter"></i></p>
+      </div>
     </div>
-  </div>
-</section>
-<section class="footer">
-  <div class="row">
-    <div class="col-lg-11">
-      <p class="footer-text">This is a footer where I'm supposed to say stuff. Woo. Check out my social media links that don't actually link to anything.</p>
-    </div>
-    <div class="col-lg-1">
-      <p class="footer-icon"><i class="fab fa-instagram"></i></p>
-      <p class="footer-icon"><i class="fab fa-snapchat-ghost"></i></p>
-      <p class="footer-icon"><i class="fab fa-twitter"></i></p>
-    </div>
-  </div>
-</section>
+  </section>
 </body>
 
 </html>
