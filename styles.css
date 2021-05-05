@@ -216,7 +216,7 @@ border-radius: 15px;
 }
 
 .footer-icon {
-  padding-top: 30%;
+  padding-top: 30px;
   font-size: 20px;
 }
 
@@ -279,10 +279,9 @@ border-radius: 15px;
   animation-fill-mode: forwards;
 }
 
-
 /******** Media *******/
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width:  900px) {
   .flip-card-front, .flip-card-back, .flip-card-inner, .flip-card, .flip-card:hover {
     position: absolute;
     visibility: hidden;
